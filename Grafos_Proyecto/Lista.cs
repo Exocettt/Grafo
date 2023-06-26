@@ -45,6 +45,23 @@ namespace Grafos_Proyecto
                     nodoOrigen.Enlace = nodoDestino;
                 }
             }
+
+
+            public void MostrarGrafo()
+            {
+                foreach (Nodo nodo in nodos)
+                {
+                    Console.Write("Nodo " + nodo.Dato + " -> ");
+                    if (nodo.Enlace != null)
+                    {
+                        Console.WriteLine(nodo.Enlace.Dato);
+                    }
+                    else
+                    {
+                        Console.WriteLine("No tiene enlaces");
+                    }
+                }
+            }
         }
     }
 }
