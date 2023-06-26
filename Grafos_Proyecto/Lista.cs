@@ -23,7 +23,17 @@ namespace Grafos_Proyecto
                 nodos.Add(nuevoNodo);
             }
 
-
+            private Nodo BuscarNodo(int dato)
+            {
+                foreach (Nodo nodo in nodos)
+                {
+                    if (nodo.Dato == dato)
+                    {
+                        return nodo;
+                    }
+                }
+                return null;
+            }
         }
     }
 }
