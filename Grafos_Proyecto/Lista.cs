@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Grafos_Proyecto
 {
-    internal class Lista
+    internal class Grafo
     {
-        class Grafo
-        {
+
             private List<Nodo> nodos;
 
             public Grafo()
@@ -51,7 +50,7 @@ namespace Grafos_Proyecto
             {
                 foreach (Nodo nodo in nodos)
                 {
-                    Console.Write("Nodo " + nodo.Dato + " -> ");
+                    Console.Write("" + nodo.Dato + " -> ");
                     if (nodo.Enlace != null)
                     {
                         Console.WriteLine(nodo.Enlace.Dato);
@@ -64,4 +63,4 @@ namespace Grafos_Proyecto
             }
         }
     }
-}
+

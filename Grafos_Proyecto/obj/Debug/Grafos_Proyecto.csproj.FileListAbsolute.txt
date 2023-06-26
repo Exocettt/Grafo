@@ -1,0 +1,8 @@
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\bin\Debug\Grafos_Proyecto.exe.config
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\bin\Debug\Grafos_Proyecto.exe
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\bin\Debug\Grafos_Proyecto.pdb
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\obj\Debug\Grafos_Proyecto.csproj.AssemblyReference.cache
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\obj\Debug\Grafos_Proyecto.csproj.SuggestedBindingRedirects.cache
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\obj\Debug\Grafos_Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\obj\Debug\Grafos_Proyecto.exe
+C:\Users\norie\Source\Repos\Grafo\Grafos_Proyecto\obj\Debug\Grafos_Proyecto.pdb
