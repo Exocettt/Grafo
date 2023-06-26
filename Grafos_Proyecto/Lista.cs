@@ -34,6 +34,17 @@ namespace Grafos_Proyecto
                 }
                 return null;
             }
+
+            public void AgregarArista(int valorOrigen, int valorDestino)
+            {
+                Nodo nodoOrigen = BuscarNodo(valorOrigen);
+                Nodo nodoDestino = BuscarNodo(valorDestino);
+
+                if (nodoOrigen != null && nodoDestino != null)
+                {
+                    nodoOrigen.Enlace = nodoDestino;
+                }
+            }
         }
     }
 }
