@@ -9,12 +9,12 @@ namespace Grafos_Proyecto
     internal class Nodo
     {
         public int Dato { get; set;}
-        public Nodo Enlace { get; set;}
+        public List<Nodo> Enlaces { get; set;}
 
         public Nodo (int dato, Nodo enlace=null)
         {
             Dato = dato;
-            Enlace = enlace;
+            Enlaces = new List<Nodo>();
         }
     }
 }

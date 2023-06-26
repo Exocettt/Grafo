@@ -41,7 +41,7 @@ namespace Grafos_Proyecto
 
                 if (nodoOrigen != null && nodoDestino != null)
                 {
-                    nodoOrigen.Enlace = nodoDestino;
+                    nodoOrigen.Enlaces.Add(nodoDestino);
                 }
             }
 
@@ -50,17 +50,22 @@ namespace Grafos_Proyecto
             {
                 foreach (Nodo nodo in nodos)
                 {
-                    Console.Write("" + nodo.Dato + " -> ");
-                    if (nodo.Enlace != null)
+                Console.Write($"Nodo {nodo.Dato} -> ");
+
+                if (nodo.Enlaces.Count > 0)
+                {
+                    foreach (Nodo enlace in nodo.Enlaces)
                     {
-                        Console.WriteLine(nodo.Enlace.Dato);
-                    }
-                    else
-                    {
-                        Console.WriteLine("No tiene enlaces");
+                        Console.Write($"{enlace.Dato} ");
                     }
                 }
-            }
+                else
+                {
+                    Console.Write("No tiene enlaces");
+                }
+                Console.WriteLine();
+                }
         }
     }
+}
 
