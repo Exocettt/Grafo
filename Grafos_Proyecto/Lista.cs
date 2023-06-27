@@ -17,7 +17,7 @@ namespace Grafos_Proyecto
                 nodos = new List<Nodo>();
             }
 
-            public void ANodo(string dato)
+            public void AgregarNodo(string dato)
             {
                 Nodo nuevoNodo = new Nodo(dato);
                 nodos.Add(nuevoNodo);
@@ -35,7 +35,7 @@ namespace Grafos_Proyecto
                 return null;
             }
 
-            public void Arista(string Origen, string Destino)
+            public void AgregarArista(string Origen, string Destino)
             {
                 Nodo nOrigen = BuscarNodo(Origen);
                 Nodo nDestino = BuscarNodo(Destino);

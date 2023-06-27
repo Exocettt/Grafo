@@ -11,19 +11,19 @@ namespace Grafos_Proyecto
         static void Main(string[] args)
         {
             Grafo grafo = new Grafo();
-            grafo.ANodo("Hola");
-            grafo.ANodo("Mundo!!");
-            grafo.ANodo("Como");
-            grafo.ANodo("Usar");
-            grafo.ANodo("C#");
+            grafo.AgregarNodo("Hola");
+            grafo.AgregarNodo("Mundo!!");
+            grafo.AgregarNodo("Como");
+            grafo.AgregarNodo("Usar");
+            grafo.AgregarNodo("C#");
 
-            grafo.Arista("Hola", "Mundo");
-            grafo.Arista("Hola", "C#");
-            grafo.Arista("Mundo", "Como");
-            grafo.Arista("Mundo", "Usar");
-            grafo.Arista("Mundo", "C#");
-            grafo.Arista("Como", "Usar");
-            grafo.Arista("Usar", "C#");
+            grafo.AgregarArista("Hola", "Mundo");
+            grafo.AgregarArista("Hola", "C#");
+            grafo.AgregarArista("Mundo", "Como");
+            grafo.AgregarArista("Mundo", "Usar");
+            grafo.AgregarArista("Mundo", "C#");
+            grafo.AgregarArista("Como", "Usar");
+            grafo.AgregarArista("Usar", "C#");
 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("-----------------");
