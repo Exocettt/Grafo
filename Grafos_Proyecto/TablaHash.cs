@@ -23,5 +23,28 @@ namespace Grafos_Proyecto
             int indice = Math.Abs(hashCode) % tamano;
             return indice;
         }
+
+        public void Agregar(string clave, string dato)
+        {
+            int indice = FuncionHash(clave);
+
+            if (elementos[indice] == null)
+            {
+                Nodo nuevoNodo = new Nodo(dato);
+                elementos[indice] = nuevoNodo;
+            }
+            else
+            {
+                Nodo nodoExistente = elementos[indice];
+                while (nodoExistente.Enlaces.Count > 0)
+                {
+                    nodoExistente = nodoExistente.Enlaces[0];
+                }
+
+                Nodo nuevoNodo = new Nodo(dato);
+                nodoExistente.Enlaces.Add(nuevoNodo);
+            }
+        }
+
     }
 }
