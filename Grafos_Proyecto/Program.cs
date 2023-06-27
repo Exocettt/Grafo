@@ -32,6 +32,20 @@ namespace Grafos_Proyecto
             Console.ForegroundColor = ConsoleColor.White;
             grafo.MostrarGrafo();
 
+            TablaHash tablaHash = new TablaHash(grafo.ObtenerNodos().Count);
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("--------------------");
+            Console.WriteLine("-----Tabla Hash-----");
+            Console.WriteLine("--------------------");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            foreach (Nodo nodo in grafo.ObtenerNodos().Values)
+            {
+                tablaHash.Agregar(nodo.Dato, nodo.Dato);
+            }
+            tablaHash.MostrarTablaHash();
+
             Console.ReadLine();
         }
     }

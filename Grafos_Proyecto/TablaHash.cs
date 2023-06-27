@@ -46,5 +46,35 @@ namespace Grafos_Proyecto
             }
         }
 
+        public void MostrarTablaHash()
+        {
+            Console.WriteLine("Tabla Hash:");
+
+            for (int i = 0; i < tamano; i++)
+            {
+                Console.Write($"Índice {i}: ");
+
+                Nodo nodo = elementos[i];
+                if (nodo != null)
+                {
+                    Console.Write($"{nodo.Dato}");
+
+                    if (nodo.Enlaces.Count > 0)
+                    {
+                        Console.Write(" -> ");
+                        foreach (Nodo enlace in nodo.Enlaces)
+                        {
+                            Console.Write($"{enlace.Dato} ");
+                        }
+                    }
+                }
+                else
+                {
+                    Console.Write("Vacío");
+                }
+                Console.WriteLine();
+            }
+        }
+
     }
 }
