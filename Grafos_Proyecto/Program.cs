@@ -60,7 +60,6 @@ namespace Grafos_Proyecto
             {
                 Console.WriteLine("El Nodo 'Como' no se encontró en la tabla hash.");
             }
-
             Console.ReadLine();
         }
     }
