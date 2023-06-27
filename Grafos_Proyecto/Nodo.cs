@@ -8,10 +8,10 @@ namespace Grafos_Proyecto
 {
     internal class Nodo
     {
-        public int Dato { get; set;}
+        public string Dato { get; set;}
         public List<Nodo> Enlaces { get; set;}
 
-        public Nodo (int dato, Nodo enlace=null)
+        public Nodo (string dato)
         {
             Dato = dato;
             Enlaces = new List<Nodo>();

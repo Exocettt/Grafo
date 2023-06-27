@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,13 +17,13 @@ namespace Grafos_Proyecto
                 nodos = new List<Nodo>();
             }
 
-            public void AgregarNodo(int dato)
+            public void ANodo(string dato)
             {
                 Nodo nuevoNodo = new Nodo(dato);
                 nodos.Add(nuevoNodo);
             }
 
-            private Nodo BuscarNodo(int dato)
+            private Nodo BuscarNodo(string dato)
             {
                 foreach (Nodo nodo in nodos)
                 {
@@ -34,14 +35,14 @@ namespace Grafos_Proyecto
                 return null;
             }
 
-            public void AgregarArista(int valorOrigen, int valorDestino)
+            public void Arista(string Origen, string Destino)
             {
-                Nodo nodoOrigen = BuscarNodo(valorOrigen);
-                Nodo nodoDestino = BuscarNodo(valorDestino);
+                Nodo nOrigen = BuscarNodo(Origen);
+                Nodo nDestino = BuscarNodo(Destino);
 
-                if (nodoOrigen != null && nodoDestino != null)
+                if (nOrigen != null && nDestino != null)
                 {
-                    nodoOrigen.Enlaces.Add(nodoDestino);
+                    nOrigen.Enlaces.Add(nDestino);
                 }
             }
 
@@ -50,7 +51,7 @@ namespace Grafos_Proyecto
             {
                 foreach (Nodo nodo in nodos)
                 {
-                Console.Write($"Nodo {nodo.Dato} -> ");
+                Console.Write($"Nodo: {nodo.Dato} -> ");
 
                 if (nodo.Enlaces.Count > 0)
                 {
@@ -65,7 +66,7 @@ namespace Grafos_Proyecto
                 }
                 Console.WriteLine();
                 }
-        }
+            }
     }
 }
 
