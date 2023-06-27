@@ -34,6 +34,7 @@ namespace Grafos_Proyecto
 
             TablaHash tablaHash = new TablaHash(grafo.ObtenerNodos().Count);
 
+            //AYUDAAAAAAAA ESTO ES DIFICIIIIIL 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("--------------------");
             Console.WriteLine("-----Tabla Hash-----");
@@ -45,6 +46,19 @@ namespace Grafos_Proyecto
                 tablaHash.Agregar(nodo.Dato, nodo.Dato);
             }
             tablaHash.MostrarTablaHash();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("----Buscar Indice----");
+            Console.ForegroundColor = ConsoleColor.White;
+            int indice = tablaHash.BuscarIndice("Como");
+            if (indice != -1)
+            {
+                Console.WriteLine("La clave 'Como' se encuentra en el índice: " + indice);
+            }
+            else
+            {
+                Console.WriteLine("La clave 'Como' no se encontró en la tabla hash.");
+            }
 
             Console.ReadLine();
         }

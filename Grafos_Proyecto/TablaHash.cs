@@ -76,5 +76,30 @@ namespace Grafos_Proyecto
             }
         }
 
+        public int BuscarIndice(string clave)
+        {
+            int indice = FuncionHash(clave);
+
+            if (elementos[indice] != null)
+            {
+                Nodo nodo = elementos[indice];
+
+                if (nodo.Dato == clave)
+                {
+                    return indice;
+                }
+
+                while (nodo.Enlaces.Count > 0)
+                {
+                    nodo = nodo.Enlaces[0];
+                    if (nodo.Dato == clave)
+                    {
+                        return indice;
+                    }
+                }
+            }
+            return -1;
+        }
+
     }
 }
