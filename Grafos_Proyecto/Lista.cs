@@ -46,8 +46,6 @@ namespace Grafos_Proyecto
 
         public void MostrarGrafo()
         {
-            Console.WriteLine("Grafo:");
-
             foreach (Nodo nodo in nodos.Values)
             {
                 Console.Write($"Nodo: {nodo.Dato} -> ");

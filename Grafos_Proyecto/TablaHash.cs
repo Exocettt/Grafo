@@ -48,8 +48,6 @@ namespace Grafos_Proyecto
 
         public void MostrarTablaHash()
         {
-            Console.WriteLine("Tabla Hash:");
-
             for (int i = 0; i < tamano; i++)
             {
                 Console.Write($"Índice {i}: ");

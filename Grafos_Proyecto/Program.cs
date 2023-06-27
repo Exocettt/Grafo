@@ -50,14 +50,15 @@ namespace Grafos_Proyecto
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("----Buscar Indice----");
             Console.ForegroundColor = ConsoleColor.White;
+
             int indice = tablaHash.BuscarIndice("Como");
             if (indice != -1)
             {
-                Console.WriteLine("La clave 'Como' se encuentra en el índice: " + indice);
+                Console.WriteLine("El Nodo 'Como' se encuentra en el índice: " + indice);
             }
             else
             {
-                Console.WriteLine("La clave 'Como' no se encontró en la tabla hash.");
+                Console.WriteLine("El Nodo 'Como' no se encontró en la tabla hash.");
             }
 
             Console.ReadLine();
